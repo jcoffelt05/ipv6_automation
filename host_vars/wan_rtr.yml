@@ -3,8 +3,8 @@ interfaces:
   - name: "GigabitEthernet1"
     enabled: True
     type: "ethernetCsmacd"
-    ipv6_address: "2600:4040:40d0:6200::2430"
-    ipv6_address_cli: "2600:4040:40d0:6200::2430/64"
+    ipv6_address: #update for your local network
+    ipv6_address_cli: #update for your local network
     prefix_length: 64
     description: "Uplink1"
 
@@ -36,4 +36,4 @@ nat66:
  outside_interface: "GigabitEthernet1"
  prefix:
    inside: "2001:db8:10::/64"
-   outside: "2600:4040:40d0:6200::/64"
+   outside: #update for your local network
