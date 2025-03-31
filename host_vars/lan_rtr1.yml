@@ -23,14 +23,6 @@ eigrp_v6:
     - name: "GigabitEthernet2"
   router_id: "2.2.2.2"
 
-#dhcpv6:
-#  - pool:
-#      name: "v6_pool"
-#      network: "2001:db8:10::/64"
-#      dns:
-#        - "2001:4860:4860:6464"
-#        - "2001:4860:4860:64"
-
 default_route:
   name: "default"
   identifier:
@@ -39,16 +31,6 @@ default_route:
   destination: "::/0"
   next_hop: "2001:db8:172::1"
 
-#dhcpv6_pool_name: "v6_pool"
-#dhcpv6_subnet: "2001:db8:10::"
-#dhcpv6_prefix_length: 64
-#dhcpv6_lease_duration: "3600"  # Lease duration in seconds
-
-#dhcpv6_interfaces:
-#  - name: "GigabitEthernet1"
-#    enabled: false
-#  - name: "GigabitEthernet2"
-#    enabled: true
 dhcpv6:
   pool_name: "v6_pool"
   subnet:
