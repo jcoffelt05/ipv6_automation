@@ -1,0 +1,11 @@
+ipv6 unicast-routing
+ipv6 router eigrp {{eigrp_v6.as}}
+  eigrp router-id {{ eigrp_v6.router_id }}
+  no shutdown
+
+ipv6 route {{default_route.destination}} {{default_route.next_hop}}
+
+{% for interface in eigrp_v6.interfaces %}
+interface {{interface.name}}
+  ipv6 eigrp {{eigrp_v6.as}}
+{% endfor %}

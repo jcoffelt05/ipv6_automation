@@ -1,0 +1,18 @@
+---
+# tasks file for IPv6_routing
+- name: Render IPv6 routing configuration for IOS-XE CLI
+  template:
+    src: "templates/iosxe_ipv6_routing_cli.j2"
+    dest: "/tmp/iosxe_ipv6_routing_config_{{ inventory_hostname }}.txt"
+
+- name: Apply IPv6 routing configuration to IOS-XE router
+  cisco.ios.ios_command:
+    commands:
+      - "configure terminal"
+      - "{{ lookup('file', '/tmp/iosxe_ipv6_routing_config_{{ inventory_hostname }}.txt') }}"
+      
+- name: Delete temporary IPv6 routing config file
+  ansible.builtin.file:
+    path: /tmp/iosxe_ipv6_routing_config_{{ inventory_hostname }}.txt
+    state: absent
+  delegate_to: localhost

@@ -1,0 +1,24 @@
+- name: Retrieve and parse IPv6 routing table and interfaces
+  hosts: routers
+  connection: ansible.netcommon.network_cli
+  gather_facts: no
+  tasks:
+   - name: Run "show ipv6 route" to gather full config
+     cisco.ios.ios_command:
+      commands:
+        - show ipv6 route
+     register: ipv6_routes
+
+   - name: Display IPv6 routes
+     debug:
+       var: ipv6_routes.stdout_lines
+       
+   - name: Show IPv6 interfaces
+     cisco.ios.ios_command:
+      commands:
+        - show ipv6 interface brief
+     register: ipv6_interfaces
+
+   - name: Display IPv6 routes
+     debug:
+       var: ipv6_interfaces.stdout_lines    

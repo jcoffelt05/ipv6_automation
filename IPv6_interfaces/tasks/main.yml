@@ -1,0 +1,37 @@
+---
+#- name: Render OpenConfig IPv6 template
+ # template:
+  #  src: "templates/openconfig_ipv6_interface.j2"
+   # dest: "/tmp/openconfig_ipv6_config.xml"
+
+#- name: Apply configuration to IOS XE router
+#  ansible.netcommon.netconf_config:
+#    target: running
+#    content: "{{ lookup('file', '/tmp/openconfig_ipv6_config.xml') }}"
+#    commit: true
+
+#- name: Confirm IPv6 address configuration
+#  ansible.netcommon.netconf_get:
+#    filter:
+#      xpath: "/interfaces/interface"
+#    register: ipv6_config_output
+
+#- name: Display IPv6 configuration result
+#  ansible.builtin.debug:
+#    var: ipv6_config_output
+- name: Render IPv6 interface configuration for IOS-XE CLI
+  template:
+    src: "templates/iosxe_ipv6_interface_cli.j2"
+    dest: "/tmp/iosxe_ipv6_interface_config_{{ inventory_hostname }}.txt"
+
+- name: Apply IPv6 interface configuration to IOS-XE router
+  cisco.ios.ios_command:
+    commands:
+      - "configure terminal"
+      - "{{ lookup('file', '/tmp/iosxe_ipv6_interface_config_{{ inventory_hostname }}.txt') }}"
+      
+- name: Delete temporary IPv6 interface config file
+  ansible.builtin.file:
+    path: /tmp/iosxe_ipv6_interface_config_{{ inventory_hostname }}.txt
+    state: absent
+  delegate_to: localhost

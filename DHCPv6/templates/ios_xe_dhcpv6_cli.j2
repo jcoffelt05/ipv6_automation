@@ -1,0 +1,9 @@
+
+ipv6 dhcp pool {{ dhcpv6.pool_name }}
+  address prefix {{ dhcpv6.subnet.ip_address }}
+  dns-server {{ dhcpv6.dns }}
+
+{% for interface in dhcpv6.interfaces %}
+interface {{ interface.name }}
+  ipv6 dhcp server {{ dhcpv6.pool_name }}
+{% endfor %}

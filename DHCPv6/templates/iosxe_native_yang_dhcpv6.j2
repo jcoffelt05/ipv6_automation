@@ -1,0 +1,22 @@
+<config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <ios-dhcp:Cisco-IOS-XE-dhcp xmlns:ios-dhcp="http://cisco.com/ns/yang/Cisco-IOS-XE-dhcp">
+    <dhcpv6-pool>
+      <name>{{ dhcpv6_pool_name }}</name>
+      <subnet>
+        <ip-address>{{ dhcpv6_subnet }}</ip-address>
+        <prefix-length>{{ dhcpv6_prefix_length }}</prefix-length>
+      </subnet>
+      <lease>
+        <duration>{{ dhcpv6_lease_duration }}</duration>
+      </lease>
+    </dhcpv6-pool>
+    <interfaces>
+      {% for interface in dhcpv6_interfaces %}
+      <interface>
+        <name>{{ interface.name }}</name>
+        <enabled>{{ interface.enabled | default(true) | lower }}</enabled>
+      </interface>
+      {% endfor %}
+    </interfaces>
+  </ios-dhcp:Cisco-IOS-XE-dhcp>
+</config>
