@@ -3,8 +3,8 @@ interfaces: #dictionary of interfaces w/variables
   - name: "GigabitEthernet1"
     enabled: True
     type: "ethernetCsmacd"
-    ipv6_address: "2600:4040:40d0:6200::2430"
-    ipv6_address_cli: "2600:4040:40d0:6200::2430/64"
+    ipv6_address: #update to match your environment
+    ipv6_address_cli: #update to match your environment
     prefix_length: 64
     description: "Uplink1"
 
@@ -35,4 +35,4 @@ nat66:
  outside_interface: "1" #gigabitethernet interface number
  prefix:
    inside: "2001:db8:10::/64"
-   outside: "2600:4040:40d0:6200::/64"
+   outside: #update to match your environment
