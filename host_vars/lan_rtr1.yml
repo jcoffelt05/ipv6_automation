@@ -1,0 +1,43 @@
+---
+interfaces:
+  - name: "GigabitEthernet1"
+    enabled: True
+    type: "ethernetCsmacd"
+    ipv6_address: "2001:db8:172::2"
+    ipv6_address_cli: "2001:db8:172::2/64"    
+    prefix_length: 64
+    description: "Uplink to core router"
+
+  - name: "GigabitEthernet2"
+    enabled: True
+    type: "ethernetCsmacd"
+    ipv6_address: "2001:db8:10::1"
+    ipv6_address_cli: "2001:db8:10::1/64"
+    prefix_length: 64
+    description: "Connection to edge network"
+
+eigrp_v6:
+  as: 6
+  interfaces:
+    - name: "1" #gigabitethernet interface number
+    - name: "2"
+  router_id: "2.2.2.2"
+
+default_route:
+  name: "default"
+  identifier:
+    - type: "STATIC"
+      name: "static"
+  destination: "::/0"
+  next_hop: "2001:db8:172::1"
+
+
+dhcpv6:
+  pool_name: "v6_pool"
+  subnet:
+    ip_address: "2001:db8:10::/64"
+    prefix_length: 64
+  lease:
+    duration: 3600
+  interfaces: "2"
+  dns: "2001:4860:4860::8888"

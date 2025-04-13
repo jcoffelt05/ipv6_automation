@@ -1,0 +1,44 @@
+<config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+    <ipv6>
+      <unicast-routing/>
+
+      <router>
+        <router-eigrp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-eigrp">
+          <eigrp>
+            <autonomous-system>{{ eigrp_v6.as }}</autonomous-system>
+            <eigrp>
+              <router-id>{{ eigrp_v6.router_id }}</router-id>
+            </eigrp>
+            <shutdown>false</shutdown>
+          </eigrp>
+        </router-eigrp>
+      </router>
+
+      <route>
+        <ipv6-route-list>
+          <prefix>{{ default_route.destination }}</prefix>
+          <ipv6-fwd-list>
+            <fwd>{{ default_route.next_hop }}</fwd>
+          </ipv6-fwd-list>
+        </ipv6-route-list>
+      </route>
+    </ipv6>
+
+    {% for interface in eigrp_v6.interfaces %}
+    <interface>
+      <GigabitEthernet>
+        <name>{{ interface.name }}</name>
+        <ipv6>
+          <enable/>
+          <router-eigrp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-eigrp">
+            <eigrp>
+              <as-number>{{ eigrp_v6.as }}</as-number>
+            </eigrp>
+          </router-eigrp>
+        </ipv6>
+      </GigabitEthernet>
+    </interface>
+    {% endfor %}
+  </native>
+</config>

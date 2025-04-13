@@ -1,0 +1,5 @@
+{% for interface in interfaces %}
+interface {{ interface.name }}
+  ipv6 address {{ interface.ipv6_address_cli }}
+  ipv6 enable
+{% endfor %}

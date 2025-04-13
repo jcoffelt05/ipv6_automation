@@ -1,0 +1,38 @@
+---
+interfaces: #dictionary of interfaces w/variables
+  - name: "GigabitEthernet1"
+    enabled: True
+    type: "ethernetCsmacd"
+    ipv6_address: "2600:4040:40d0:6200::2430"
+    ipv6_address_cli: "2600:4040:40d0:6200::2430/64"
+    prefix_length: 64
+    description: "Uplink1"
+
+  - name: "GigabitEthernet2"
+    enabled: True
+    type: "ethernetCsmacd"
+    ipv6_address: "2001:db8:172::1"
+    ipv6_address_cli: "2001:db8:172::1/64"
+    prefix_length: 64
+    description: "Connection to edge network"
+
+eigrp_v6:
+  as: 6
+  interfaces:
+    - name: "2" #gigabitethernet interface number
+  router_id: "1.1.1.1"
+
+default_route:
+  name: "default"
+  identifier:
+    - type: "STATIC"
+      name: "static"
+  destination: "::/0"
+  next_hop: "2600:4040:40d0:6200::1"
+
+nat66:
+ inside_interface: "2" #gigabitethernet interface number
+ outside_interface: "1" #gigabitethernet interface number
+ prefix:
+   inside: "2001:db8:10::/64"
+   outside: "2600:4040:40d0:6200::/64"

@@ -1,0 +1,33 @@
+---
+- name: IPv6 Migration - Configure IPv6 Interfaces and Routing on Routers
+  hosts: routers
+  connection: netconf
+  gather_facts: false
+  roles:
+    - IPv6_interfaces
+    - IPv6_routing
+
+- name: IPv6 Migration - Configure DHCPv6 on LAN Router
+  hosts: lan_rtr1
+  connection: netconf
+  gather_facts: false
+  roles:
+    - DHCPv6
+
+- name: IPv6 Migration - Configure IPv6 Prefix Translation on WAN Router
+  hosts: wan_rtr
+  connection: netconf
+  gather_facts: false
+  roles:
+    - IPv6_prefix_translation
+
+- name: Save running-config to startup-config via CLI
+  hosts: routers
+  connection: network_cli
+  gather_facts: false
+  tasks:
+   - name: Save running config to startup config
+     cisco.ios.ios_config:
+      save_when: always
+
+

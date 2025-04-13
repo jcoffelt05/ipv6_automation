@@ -1,0 +1,36 @@
+<config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+    <ipv6>
+      <dhcp>
+        <server xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-dhcp">
+          <vrf>
+            <enable xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" nc:operation="merge"/>
+          </vrf>
+        </server>
+        <pool xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-dhcp" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" nc:operation="merge">
+          <name>{{ dhcpv6.pool_name }}</name>
+          <address>
+            <prefix nc:operation="merge">
+              <ipv6-address>{{ dhcpv6.subnet.ip_address }}</ipv6-address>
+            </prefix>
+          </address>
+          <dns-server>{{ dhcpv6.dns }}</dns-server>
+        </pool>
+      </dhcp>
+    </ipv6>
+
+    <!-- Assign DHCPv6 Pool to Interface -->
+    <interface>
+      <GigabitEthernet xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" nc:operation="merge">
+        <name>{{ dhcpv6.interfaces }}</name>
+        <ipv6>
+          <dhcp>
+            <server xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-dhcp" nc:operation="merge">
+              <word>{{ dhcpv6.pool_name }}</word>
+            </server>
+          </dhcp>
+        </ipv6>
+      </GigabitEthernet>
+    </interface>
+  </native>
+</config>

@@ -1,0 +1,31 @@
+<config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+    <!-- NAT66 Configuration -->
+    <nat66 xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-nat">
+      <prefix>
+        <inside-no-vrf>
+          <inside>
+            <inside-pfx>{{nat66.prefix.inside}}</inside-pfx>
+            <outside>{{nat66.prefix.outside}}</outside>
+          </inside>
+        </inside-no-vrf>
+      </prefix>
+    </nat66>
+
+    <!-- Interface Configuration -->
+    <interface>
+      <GigabitEthernet>
+        <name>{{nat66.outside_interface}}</name>
+        <nat66 xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-nat">outside</nat66>
+      </GigabitEthernet>
+    </interface>
+
+    <interface>
+      <GigabitEthernet>
+        <name>{{nat66.inside_interface}}</name>
+        <nat66 xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-nat">inside</nat66>
+      </GigabitEthernet>
+    </interface>
+  </native>
+</config>
+

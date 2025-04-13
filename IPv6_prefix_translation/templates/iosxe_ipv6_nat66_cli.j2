@@ -1,0 +1,7 @@
+interface {{ nat66.inside_interface }}
+  nat66 inside
+
+interface {{ nat66.outside_interface }}
+  nat66 outside
+
+nat66 prefix inside {{ nat66.prefix.inside }} outside {{ nat66.prefix.outside}}
