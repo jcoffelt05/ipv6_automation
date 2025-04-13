@@ -12,6 +12,6 @@ This lab uses Ansible's NETCONF_CONFIG module to configure the target Cisco Rout
 - Check and update host variables to match your virtual environment
 
 # Requirements
--Ansible
--Cisco Modeling Labs Personal (paid version required to support NETCONF)
--NCClient
+- Ansible
+- Cisco Modeling Labs Personal (paid version required to support NETCONF)
+- NCClient
