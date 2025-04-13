@@ -21,3 +21,11 @@ This lab uses Ansible's NETCONF_CONFIG module to configure the target Cisco Rout
 - Datta, A. Imran, A., Biswas, C. (2023). Network Automation: Enhancing Operational Efficiency across the Network Environment. ICRRD Journal, 2023, 4(1), 101-111. 	https://doi.org/10.53272/icrrd.v4i1.1
 - Deering, S., Hinden, R. (2017, July). Internet Protocol, Version 6 (IPv6) Specification. Internet Engineering Task Force (IETF). https://datatracker.ietf.org/doc/html/rfc8200.
 - Pickard, J., Angolia, M., & Drummond, D. (2019). IPv6 Diffusion Milestones: Assessing the Quantity and Quality of Adoption. Journal of International Technology	and Information Management, 28(1), 2-27. https://scholarworks.lib.csusb.edu/jitim/vol28/iss1/1
+
+# Related Documentation
+
+- Ansible NETCONF_CONFIG: https://docs.ansible.com/ansible/latest/collections/ansible/netcommon/netconf_config_module.html
+- Cisco Modeling Labs: https://www.cisco.com/site/us/en/learn/training-certifications/training/modeling-labs/resources.html
+- Cisco YANG Models: https://github.com/YangModels/yang/tree/main/vendor/cisco/xe/1751
+- Cisco YANG Suite: https://developer.cisco.com/yangsuite/
+- Sempahore: https://semaphoreui.com/
