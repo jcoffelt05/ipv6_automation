@@ -16,9 +16,10 @@ This lab uses Ansible's NETCONF_CONFIG module to configure the target Cisco Rout
 - The playbook titled "ipv6_verification.yml" pulls the target routers interface configs and routing table entries so that the user can verify the changes took.
 
 # Requirements
-- Ansible
+- Linux or Windows client w/Ansible
+- Bridged connection between virtual environemnt (the CML lab) and local area network to allow Ansible client reachability
 - Cisco Modeling Labs Personal (paid version required to support NETCONF)
-- NCClient
+- NCClient to allow Linux client to leverave NETCONF_CONFIG module
 
 # References
 
