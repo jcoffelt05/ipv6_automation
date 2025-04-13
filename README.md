@@ -11,6 +11,10 @@ This lab uses Ansible's NETCONF_CONFIG module to configure the target Cisco Rout
 # Before first use
 - Check and update host variables to match your virtual environment
 
+# Running the playbook
+- The playbook titled "ipv6_migration.yml" is the primary task and calls all of the included roles.
+- The playbook titled "ipv6_verification.yml" pulls the target routers interface configs and routing table entries so that the user can verify the changes took.
+
 # Requirements
 - Ansible
 - Cisco Modeling Labs Personal (paid version required to support NETCONF)
