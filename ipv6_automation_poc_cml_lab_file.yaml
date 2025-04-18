@@ -1,0 +1,847 @@
+annotations:
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFFFF'
+    line_end: null
+    line_start: null
+    thickness: 1
+    type: line
+    x1: 520.0
+    y1: -160.0
+    x2: 520.0
+    y2: -160.0
+    z_index: 0
+  - border_color: '#808080FF'
+    border_radius: 12
+    border_style: ''
+    color: '#63C9CC3F'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: 80.0
+    y1: -160.0
+    x2: 600.0
+    y2: 80.0
+    z_index: 1
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#BEB6B6'
+    rotation: 0
+    text_bold: true
+    text_content: 'IPv4:192.168.1.0/24, IPv6: 2600:4040:40d0:6200::/64'
+    text_font: monospace
+    text_italic: false
+    text_size: 10
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 240.0
+    y1: -160.0
+    z_index: 2
+  - border_color: '#808080FF'
+    border_radius: 6
+    border_style: ''
+    color: '#A8D36776'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: -160.0
+    y1: -120.0
+    x2: 280.0
+    y2: 240.0
+    z_index: 3
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#ABACAB'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      IPv4:172.16.1.0/24,
+      IPv6:2001:DB8:172::1::/64
+    text_font: monospace
+    text_italic: false
+    text_size: 10
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -160.0
+    y1: -120.0
+    z_index: 4
+  - border_color: '#808080FF'
+    border_radius: 6
+    border_style: ''
+    color: '#DF09BF20'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: -160.0
+    y1: 120.0
+    x2: 280.0
+    y2: 200.0
+    z_index: 5
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#808080FF'
+    rotation: 0
+    text_bold: false
+    text_content: ''
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -160.0
+    y1: 160.0
+    z_index: 6
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#979696'
+    rotation: 0
+    text_bold: true
+    text_content: |-
+      IPv4:10.10.10.0/24,
+      IPv6:2001:DB8:10::1::/64
+    text_font: monospace
+    text_italic: false
+    text_size: 10
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -160.0
+    y1: 120.0
+    z_index: 7
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFFFF'
+    line_end: null
+    line_start: null
+    thickness: 1
+    type: line
+    x1: 0.0
+    y1: -200.0
+    x2: 80.0
+    y2: -120.0
+    z_index: 8
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#0A0A0A'
+    rotation: 0
+    text_bold: true
+    text_content: NAT/NAT66 Gateway
+    text_font: monospace
+    text_italic: false
+    text_size: 11
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -120.0
+    y1: -200.0
+    z_index: 9
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFFFF'
+    line_end: null
+    line_start: null
+    thickness: 1
+    type: line
+    x1: -200.0
+    y1: 0.0
+    x2: -200.0
+    y2: 0.0
+    z_index: 10
+  - border_color: '#808080FF'
+    border_radius: 0
+    border_style: ''
+    color: '#E3DA8150'
+    rotation: 0
+    thickness: 1
+    type: rectangle
+    x1: 160.0
+    y1: 160.0
+    x2: 320.0
+    y2: 160.0
+    z_index: 11
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#7E7D7D'
+    rotation: 0
+    text_bold: false
+    text_content: 'IPv4(only): 10.10.11.0/24'
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 200.0
+    y1: 160.0
+    z_index: 12
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFFFF'
+    line_end: null
+    line_start: null
+    thickness: 1
+    type: line
+    x1: 80.0
+    y1: 120.0
+    x2: 80.0
+    y2: 120.0
+    z_index: 13
+  - border_color: '#808080FF'
+    border_style: ''
+    color: '#FFFFFFFF'
+    line_end: null
+    line_start: null
+    thickness: 1
+    type: line
+    x1: 240.0
+    y1: 80.0
+    x2: 80.0
+    y2: 120.0
+    z_index: 14
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#070707'
+    rotation: 0
+    text_bold: true
+    text_content: DHCP Server
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 240.0
+    y1: 80.0
+    z_index: 15
+smart_annotations: []
+nodes:
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: "!\nversion 17.15\nservice timestamps debug datetime msec\nservice\
+          \ timestamps log datetime msec\nplatform qfp utilization monitor load 80\n\
+          platform sslvpn use-pd\nplatform console serial\n!\nhostname WAN_RTR\n!\n\
+          boot-start-marker\nboot-end-marker\n!\n!\nno logging console\nno aaa new-model\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\nip domain name corp.edu\n!\n!\n!\nlogin\
+          \ on-success log\n!\n!\nsubscriber templating\n!\n!\n!\ncrypto pki trustpoint\
+          \ SLA-TrustPoint\n enrollment pkcs12\n revocation-check crl\n hash sha512\n\
+          !\n!\ncrypto pki certificate chain SLA-TrustPoint\n certificate ca 01\n\
+          \  30820321 30820209 A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n\
+          \  32310E30 0C060355 040A1305 43697363 6F312030 1E060355 04031317 43697363\n\
+          \  6F204C69 63656E73 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n\
+          \  3834375A 170D3338 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n\
+          \  43697363 6F312030 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n\
+          \  526F6F74 20434130 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n\
+          \  82010A02 82010100 A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n\
+          \  CBB4C798 212AA147 C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n\
+          \  1C394D78 462EF239 C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n\
+          \  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n\
+          \  7390A3EB 2B5436AD C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n\
+          \  68E69491 20F320E7 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n\
+          \  C7479096 B4CB2D62 EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n\
+          \  C55F0D76 61F9A4CD 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n\
+          \  DFC7C6CF 04DD7FD1 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n\
+          \  06300F06 03551D13 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n\
+          \  4B3D31E5 1B3E6A17 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n\
+          \  03820101 00507F24 D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n\
+          \  604EDCDE FF4FED2B 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n\
+          \  D98987BF E40CBD9E 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n\
+          \  467A3DF4 4D565700 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n\
+          \  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n\
+          \  5FB0DA06 B92AFE7F 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n\
+          \  80DDCD16 D6BACECA EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n\
+          \  418616A9 4093E049 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n\
+          \  D697DF7F 28\n  \tquit\n!\n!\nlicense udi pid C8000V sn 9LNSMGVCWF0\n\
+          memory free low-watermark processor 166409\ndiagnostic bootup level minimal\n\
+          !\n!\n!\nusername admin privilege 15 secret 9 $9$8r6eBwTr6QzlVE$qbRSAOZzvxyKE6Saw3p7aQ6RqHA/8yDbIqPUC8lvn9E\n\
+          !\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface GigabitEthernet1\n\
+          \ ip address 192.168.1.248 255.255.255.0\n ip nat outside\n negotiation\
+          \ auto\n no shutdown\n!\ninterface GigabitEthernet2\n ip address 172.16.1.1\
+          \ 255.255.255.252\n ip nat inside\n negotiation auto\n no shutdown\n!\n\
+          interface GigabitEthernet3\n no ip address\n shutdown\n negotiation auto\n\
+          !\n!\nrouter eigrp 2\n network 172.16.1.0 0.0.0.3\n network 192.168.1.0\n\
+          \ passive-interface GigabitEthernet1\n!\nip forward-protocol nd\n!\nno ip\
+          \ http server\nip http secure-server\nip route 0.0.0.0 0.0.0.0 192.168.1.1\n\
+          ip nat inside source list 1 interface GigabitEthernet1 overload\nip ssh\
+          \ bulk-mode 131072\n!\nip access-list standard 1\n 10 permit 10.10.10.0\
+          \ 0.0.0.255\n 20 permit 10.10.11.0 0.0.0.255\n!\n!\ncontrol-plane\n!\n!\n\
+          line con 0\n exec-timeout 0 0\n stopbits 1\nline aux 0\nline vty 0 4\n exec-timeout\
+          \ 0 0\n login local\n transport input ssh\n!\n!\n!\n!\n!\n!\n!\nnetconf-yang\n\
+          end"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: WAN_RTR
+    node_definition: cat8000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: 80
+    y: -120
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        slot: 2
+        type: physical
+  - boot_disk_size: null
+    configuration:
+      - name: iosxe_config.txt
+        content: |-
+          Building configuration...
+
+          Current configuration : 5967 bytes
+          !
+          ! Last configuration change at 18:39:52 UTC Wed Apr 16 2025
+          !
+          version 17.15
+          service timestamps debug datetime msec
+          service timestamps log datetime msec
+          platform qfp utilization monitor load 80
+          platform sslvpn use-pd
+          platform console serial
+          !
+          hostname LAN1_RTR
+          !
+          boot-start-marker
+          boot-end-marker
+          !
+          !
+          no logging console
+          no aaa new-model
+          !
+          !
+          !
+          !
+          !
+          !
+          ip vrf management
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          ip domain name corp.edu
+          !
+          ip dhcp pool 2
+           network 10.10.10.0 255.255.255.0
+           dns-server 8.8.8.8
+           default-router 10.10.10.1
+          !
+          ip dhcp pool 3
+           network 10.10.11.0 255.255.255.0
+           dns-server 8.8.8.8
+           default-router 10.10.11.1
+          !
+          !
+          !
+          login on-success log
+          !
+          !
+          subscriber templating
+          !
+          !
+          !
+          crypto pki trustpoint SLA-TrustPoint
+           enrollment pkcs12
+           revocation-check crl
+           hash sha512
+          !
+          crypto pki trustpoint TP-self-signed-3844314273
+           enrollment selfsigned
+           subject-name cn=IOS-Self-Signed-Certificate-3844314273
+           revocation-check none
+           rsakeypair TP-self-signed-3844314273
+           hash sha512
+          !
+          !
+          crypto pki certificate chain SLA-TrustPoint
+           certificate ca 01
+            30820321 30820209 A0030201 02020101 300D0609 2A864886 F70D0101 0B050030
+            32310E30 0C060355 040A1305 43697363 6F312030 1E060355 04031317 43697363
+            6F204C69 63656E73 696E6720 526F6F74 20434130 1E170D31 33303533 30313934
+            3834375A 170D3338 30353330 31393438 34375A30 32310E30 0C060355 040A1305
+            43697363 6F312030 1E060355 04031317 43697363 6F204C69 63656E73 696E6720
+            526F6F74 20434130 82012230 0D06092A 864886F7 0D010101 05000382 010F0030
+            82010A02 82010100 A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D
+            CBB4C798 212AA147 C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520
+            1C394D78 462EF239 C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE
+            4AA4E80D DB6FD1C9 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC
+            7390A3EB 2B5436AD C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188
+            68E69491 20F320E7 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7
+            C7479096 B4CB2D62 EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191
+            C55F0D76 61F9A4CD 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44
+            DFC7C6CF 04DD7FD1 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201
+            06300F06 03551D13 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85
+            4B3D31E5 1B3E6A17 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500
+            03820101 00507F24 D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905
+            604EDCDE FF4FED2B 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B
+            D98987BF E40CBD9E 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8
+            467A3DF4 4D565700 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C
+            7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B
+            5FB0DA06 B92AFE7F 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678
+            80DDCD16 D6BACECA EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB
+            418616A9 4093E049 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0
+            D697DF7F 28
+                  quit
+          crypto pki certificate chain TP-self-signed-3844314273
+           certificate self-signed 01
+            30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 0D050030
+            31312F30 2D060355 04030C26 494F532D 53656C66 2D536967 6E65642D 43657274
+            69666963 6174652D 33383434 33313432 3733301E 170D3235 30343136 31383333
+            32335A17 0D333530 34313631 38333332 335A3031 312F302D 06035504 030C2649
+            4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 38343433
+            31343237 33308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201
+            0A028201 0100F8A9 65CBAA0C 8E35F299 F1DFCC07 685E4CEE 46DD46EA 0FCF3301
+            0E13048C 36560BB9 2C71FE2D AF15A0E9 69BFB5A0 CA8AE666 DD835471 7EC98EAB
+            2A02FD1E 6C04ECFC BA96768B AA133D30 8EB58EAD FF3EDF81 E410DADE 31180D61
+            8A6BE2A8 6E6AEAC8 61BB42A7 126A8AA2 6A37C9F6 05882AD6 99CE6B34 1677E293
+            B677A49C A1D30FFE 4F47E752 8C24D10F 4C166AEF D3802144 A3CFC4D0 E993BBAC
+            ADAC7809 7E0355E0 9B65D951 8E97E986 A83C3D3E 1C01E028 254F7129 8939A804
+            D2636825 702415C7 867D7469 94D62BFE 6CAE1EA6 AA2F46F5 D8F38CFD D2853E43
+            FA5C49F3 4E37132A 12D88095 55AC0FE4 372139A2 12374EBC C8A8D3B5 119DCDB2
+            51249DD1 D5D90203 010001A3 53305130 1D060355 1D0E0416 04144971 801F4E39
+            357635F0 C32F2707 D6F184F5 C2B5301F 0603551D 23041830 16801449 71801F4E
+            39357635 F0C32F27 07D6F184 F5C2B530 0F060355 1D130101 FF040530 030101FF
+            300D0609 2A864886 F70D0101 0D050003 82010100 50C20AF8 DE00B0F6 F0DCC4C9
+            A9E32076 99582FC8 C50AAF3B 7A5DF132 AF3A8862 3C1DFE29 3529EB2D 90AD82D8
+            7847FD8D 221EDDCE 0719CEC1 F654E5D5 4CBACB1A 2F326EF2 9C32CD6D 69CEC38B
+            EFCCB9CD 44DB2EA8 102537B6 288DB5FF BAFFF276 C9DB7405 C9902CCF 056F1B7C
+            57DF7327 17E7562D 7E97F09E 6C1549DA CB7430B9 734C2CE3 D8DDC238 7CC023BB
+            FE6F9063 2A95394E 88419B09 2E897A61 4EF9D732 A1A81C86 009134D3 673DDE69
+            72E64C2D F743FD60 B74A986C 13CE7672 036F18A3 1BF0109F 156BD729 342F0967
+            43B1B5C6 1C65DAD6 11952CD5 77B5AE71 96785B0B 7D1A1810 8270DDF8 EAAD1FC7
+            C45AA937 4FD1BD43 38FDB877 7D53A1CD 5316D525
+                  quit
+          !
+          !
+          license udi pid C8000V sn 9Z3XUWF6U2A
+          memory free low-watermark processor 166409
+          diagnostic bootup level minimal
+          !
+          !
+          !
+          username admin privilege 15 secret 9 $9$BGhb9YMjn9qHpU$nQ2s51MCTDcx94JWESAuvNaepOPGjL1XGT5DgKzQfAQ
+          !
+          redundancy
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          interface GigabitEthernet1
+           ip address 172.16.1.2 255.255.255.252
+           negotiation auto
+           no shutdown
+          !
+          interface GigabitEthernet2
+           ip address 10.10.10.1 255.255.255.0
+           negotiation auto
+           no shutdown
+          !
+          interface GigabitEthernet3
+           ip vrf forwarding management
+           ip address 192.168.1.253 255.255.255.0
+           negotiation auto
+           no shutdown
+          !
+          interface GigabitEthernet4
+           ip address 10.10.11.1 255.255.255.0
+           negotiation auto
+           no shutdown
+          !
+          !
+          router eigrp 2
+           network 10.10.10.0 0.0.0.255
+           network 10.10.11.0 0.0.0.255
+           network 172.16.1.0 0.0.0.3
+          !
+          ip forward-protocol nd
+          !
+          no ip http server
+          ip http secure-server
+          ip route 0.0.0.0 0.0.0.0 172.16.1.1
+          ip ssh bulk-mode 131072
+          !
+          !
+          !
+          control-plane
+          !
+          !
+          line con 0
+           exec-timeout 0 0
+           stopbits 1
+          line aux 0
+          line vty 0 4
+           exec-timeout 0 0
+           login local
+           transport input ssh
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          netconf-yang
+          end
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: null
+    label: LAN_RTR1
+    node_definition: cat8000v
+    parameters: {}
+    ram: null
+    tags: []
+    x: 80
+    y: 120
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        mac_address: null
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet2
+        mac_address: null
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet3
+        mac_address: null
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet4
+        mac_address: null
+        slot: 3
+        type: physical
+  - boot_disk_size: null
+    configuration:
+      - name: default
+        content: System Bridge
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: Internet/Management
+    node_definition: external_connector
+    parameters: {}
+    ram: null
+    tags: []
+    x: 680
+    y: -120
+    interfaces:
+      - id: i0
+        label: port
+        mac_address: null
+        slot: 0
+        type: physical
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n3
+    image_definition: null
+    label: WAN_Aggregation
+    node_definition: unmanaged_switch
+    parameters: {}
+    ram: null
+    tags: []
+    x: 440
+    y: -120
+    interfaces:
+      - id: i0
+        label: port0
+        mac_address: null
+        slot: 0
+        type: physical
+      - id: i1
+        label: port1
+        mac_address: null
+        slot: 1
+        type: physical
+      - id: i2
+        label: port2
+        mac_address: null
+        slot: 2
+        type: physical
+      - id: i3
+        label: port3
+        mac_address: null
+        slot: 3
+        type: physical
+      - id: i4
+        label: port4
+        mac_address: null
+        slot: 4
+        type: physical
+      - id: i5
+        label: port5
+        mac_address: null
+        slot: 5
+        type: physical
+      - id: i6
+        label: port6
+        mac_address: null
+        slot: 6
+        type: physical
+      - id: i7
+        label: port7
+        mac_address: null
+        slot: 7
+        type: physical
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n4
+    image_definition: null
+    label: LAN1_SW
+    node_definition: unmanaged_switch
+    parameters: {}
+    ram: null
+    tags: []
+    x: 80
+    y: 240
+    interfaces:
+      - id: i0
+        label: port0
+        mac_address: null
+        slot: 0
+        type: physical
+      - id: i1
+        label: port1
+        mac_address: null
+        slot: 1
+        type: physical
+      - id: i2
+        label: port2
+        mac_address: null
+        slot: 2
+        type: physical
+      - id: i3
+        label: port3
+        mac_address: null
+        slot: 3
+        type: physical
+      - id: i4
+        label: port4
+        mac_address: null
+        slot: 4
+        type: physical
+      - id: i5
+        label: port5
+        mac_address: null
+        slot: 5
+        type: physical
+      - id: i6
+        label: port6
+        mac_address: null
+        slot: 6
+        type: physical
+      - id: i7
+        label: port7
+        mac_address: null
+        slot: 7
+        type: physical
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n5
+    image_definition: null
+    label: Host1
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: -120
+    y: 240
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        slot: 0
+        type: physical
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n6
+    image_definition: null
+    label: LAN2_SW
+    node_definition: unmanaged_switch
+    parameters: {}
+    ram: null
+    tags: []
+    x: 200
+    y: 240
+    interfaces:
+      - id: i0
+        label: port0
+        mac_address: null
+        slot: 0
+        type: physical
+      - id: i1
+        label: port1
+        mac_address: null
+        slot: 1
+        type: physical
+      - id: i2
+        label: port2
+        mac_address: null
+        slot: 2
+        type: physical
+      - id: i3
+        label: port3
+        mac_address: null
+        slot: 3
+        type: physical
+      - id: i4
+        label: port4
+        mac_address: null
+        slot: 4
+        type: physical
+      - id: i5
+        label: port5
+        mac_address: null
+        slot: 5
+        type: physical
+      - id: i6
+        label: port6
+        mac_address: null
+        slot: 6
+        type: physical
+      - id: i7
+        label: port7
+        mac_address: null
+        slot: 7
+        type: physical
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n7
+    image_definition: null
+    label: Host 2
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: 360
+    y: 240
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        slot: 0
+        type: physical
+links:
+  - id: l0
+    n1: n0
+    n2: n3
+    i1: i1
+    i2: i0
+    conditioning: {}
+    label: WAN_RTR-GigabitEthernet1<->WAN_Aggregation-port0
+  - id: l1
+    n1: n0
+    n2: n1
+    i1: i2
+    i2: i1
+    conditioning: {}
+    label: WAN_RTR-GigabitEthernet2<->LAN_RTR1-GigabitEthernet1
+  - id: l2
+    n1: n1
+    n2: n4
+    i1: i2
+    i2: i0
+    conditioning: {}
+    label: LAN_RTR1-GigabitEthernet2<->LAN_SW1-port0
+  - id: l3
+    n1: n4
+    n2: n5
+    i1: i1
+    i2: i0
+    conditioning: {}
+    label: LAN_SW1-port1<->Host1-eth0
+  - id: l4
+    n1: n1
+    n2: n3
+    i1: i3
+    i2: i1
+    conditioning: {}
+    label: LAN_RTR1-GigabitEthernet3<->WAN_Aggregation-port1
+  - id: l5
+    n1: n3
+    n2: n2
+    i1: i2
+    i2: i0
+    conditioning: {}
+    label: WAN_Aggregation-port2<->Internet/Management-port
+  - id: l6
+    n1: n1
+    n2: n6
+    i1: i4
+    i2: i0
+    conditioning: {}
+    label: LAN_RTR1-GigabitEthernet4<->LAN2_SW-port0
+  - id: l7
+    n1: n7
+    n2: n6
+    i1: i0
+    i2: i1
+    conditioning: {}
+    label: Host 2-eth0<->LAN2_SW-port1
+lab:
+  description: ''
+  notes: ''
+  title: APCV 498 Lab
+  version: 0.3.0
